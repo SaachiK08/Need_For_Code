@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">
+        <img src="/images/logo2.png" alt="">
+    </a>
+   <nav class="navbar">
+    <a href="index.html">Home</a> 
+    <a href="#application">Application Status</a> 
+    <a href="#filter">Filters</a> 
+    <a href="#community">Community</a> 
+    <a href="profile">Resource lib</a>
+    <a href="#profile">Profile</a> 
+   </nav>
+</header>
+</div>
+    <div class="main">
+        <div class="top">
+            <div class="profile">
+                <div class="photo">
+                    <img src="" alt="">
+                </div>
+                <h4>Ravish Shetty</h4>
+                <h4>He/Him</h4>
+            </div>
+            <div class="info">
+                <h3>Full Name: Ravish Mohan Shetty</h3>
+                <h3>Phone no: 93561 25364</h3>
+                <h3>Email: ravishshetty03@gmail.com</h3>
+                <h3>College Name: Thadomal Shahani Engineering College</h3>
+                <h3>College Id: TE1505-31</h3>
+            </div>
+        </div>
+        <div class="stat">
+            <h3>Application Form Status:</h3>
+            <div id="bar">
+                <div class="barin">.</div>
+            </div>
+            <h4>20%</h4>
+            
+        </div>
+        <div class="bottom">
+            <form>
+                <h2>Student Application Form</h2>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter First Name" required>
+            
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                  <option value="">Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+                
+                <label for="address">Address:</label>
+                <textarea id="address" name="address"placeholder="Enter your Address" required></textarea>
+            
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city"placeholder="Enter your City" required>
+            
+                <label for="pin-code">Pin Code:</label>
+                <input type="text" id="pin-code" name="pin-code"placeholder="Enter your Pincode" required>
+            
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state"placeholder="Enter your State" required>
+            
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country"placeholder="Enter your Country" required>
+
+                <h3>High School College Information:</h3>
+
+                <label for="Sname">Name:</label>
+                <input type="text" id="Sname"placeholder="Enter your College Name" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address"placeholder="Enter your College Address" required></textarea>
+
+                <label for="Gyear">Graduation Year:</label>
+                <input type="text" id="Gyear"placeholder="Enter your Graduation Year" required>
+
+                <h3>Extracuricular Activities:</h3>
+
+                <label for="Act1">Activity 1:</label>
+                <input type="text" class="Act1"placeholder="Enter Activities here" required>
+
+                <label for="Act2">Activity 2:</label>
+                <input type="text" class="Act2"placeholder="Enter Activities here">
+
+                <label for="Act3">Activity 3:</label>
+                <input type="text" class="Act3"placeholder="Enter Activities here">
+
+                <label for="Act4">Activity 4:</label>
+                <input type="text" class="Act4"placeholder="Enter Activities here">
+
+                <h3>Further Education</h3>
+                <label for="fedu">Intended Major:</label>
+                <select id="fedu" required>
+                  <option value="majors">Select Major</option>
+                  <option value="masters">Masters</option>
+                  <option value="bachelors">Bachelors</option>
+                  <option value="phd">Phd</option>
+                  <option value="course">Course</option>
+                </select>
+
+                <label for="inc">Family Annual Income:</label>
+                <input type="text" class="inc" placeholder="Enter Annual Income" required>
+
+                <label for="Act4">Letter of Recommendations:</label>
+                <label for="files">Select files:</label>
+                <input type="file" id="files" name="files" multiple><br><br>
+                <input class="btny" type="submit">
+
+                <h3>Submission Checklist:</h3>
+                <div class="checkboxes">
+                  <div class="checkbox">
+                    <input type="checkbox" name="cb1" value="Completed Application Form">
+                    <label for="cb1">Completed Application Form</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" name="cb2" value="HighSchool/ College Transcript">
+                    <label for="cb1">HighSchool/ College Transcript</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" name="cb3" value="List of Extra Curriculars">
+                    <label for="cb3">List of Extra Curriculars</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" name="cb4" value="Essays">
+                    <label for="cb4">Essays</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" name="cb5" value="Letters of Recommendation">
+                    <label for="cb5">Letters of Recommendation</label>
+                  </div>
+                  <button class="btnz">Save</button>
+                </div>
+
+                
+              </form>
+            </body>
+        </div>
+    </div>
+</body>
+</html>

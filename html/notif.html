@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification</title>
+    <link rel="stylesheet" href="../css/notif.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Add this CSS to hide the notification initially */
+        .notif {
+            display: none;
+            width: 200px;
+            height: 60px;
+            background-color: aquamarine;
+            position: fixed;
+            top: 600px;
+            left: 400px;
+            border-radius: 30px;
+            padding: 5px;
+            font-size: 10px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function showNotification() {
+            var notification = document.getElementById('notification');
+            notification.style.display = 'block'; // Show the notification
+            setTimeout(function() {
+                notification.style.display = 'none'; // Hide the notification after 5 seconds
+            }, 3000);
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="/public/images/logo2.png" alt="">
+        </a>
+       <nav class="navbar">
+        <a href="index.html">Home</a> 
+        <a href="#application">Application Status</a> 
+        <a href="#filter">Filters</a> 
+        <a href="#community">Community</a> 
+        <a href="profile">Resource lib</a>
+        <a href="#profile">Profile</a> 
+       </nav>
+    </header> 
+    <div class="container">
+        <div class="content">
+            <h1>Welcome</h1>
+            <p>Thank you for visiting our website.</p>
+        </div>
+        <div class="content">
+            <h1>Latest News</h1>
+            <p>Stay updated with the latest news and updates.</p>
+        </div>
+        <div class="content">
+            <h1>Upcoming Events</h1>
+            <p>Check out our upcoming events and mark your calendars.</p>
+        </div>
+    </div>
+    <div class="notif" id="notification">
+        <h1>1 Notification</h1>
+    </div>
+</body>
+</html>

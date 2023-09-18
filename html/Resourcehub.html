@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resource Hub</title>
+    <link rel="stylesheet" href="/public/css/Resourcehub.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet">
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">
+          <img src="/public/images/logo2.png" alt="">
+      </a>
+     <nav class="navbar">
+      <a href="index.html">Home</a> 
+      <a href="#application">Application Status</a> 
+      <a href="#filter">Filters</a> 
+      <a href="#community">Community</a> 
+      <a href="profile">Resource lib</a>
+      <a href="#profile">Profile</a> 
+     </nav>
+  </header>
+    <!-- Contents -->
+    <div class="allcontent">
+      <div class="sidebar">
+        <!-- Sidebar Filters -->
+        <div class="location">
+          <h1 class="location-head">Location</h1>
+          <div class="checkbox">
+            <label for="">India<input type="checkbox" id="india" /></label>
+            <label for=""
+              >United States<input type="checkbox" id="united-states"
+            /></label>
+            <label for=""
+              >United Kingdom<input type="checkbox" id="united-kingdom"
+            /></label>
+            <label for=""
+              >Pakistan<input type="checkbox" id="pakistan"
+            /></label>
+            <label for="">Canada<input type="checkbox" id="canada" /></label>
+            <label for="">Europe<input type="checkbox" id="europe" /></label>
+            <label for=""
+              >South Africa<input type="checkbox" id="south-africa"
+            /></label>
+            <label for="">Nigeria<input type="checkbox" id="nigeria" /></label>
+          </div>
+        </div>
+        <div class="degree">
+          <h1 class="location-head">Degree</h1>
+          <div class="checkbox">
+            <label for="">Masters<input type="checkbox" id="masters" /></label>
+            <label for=""
+              >Bachelor<input type="checkbox" id="bachelor"
+            /></label>
+            <label for="">Phd<input type="checkbox" id="phd" /></label>
+            <label for="">Course<input type="checkbox" id="course" /></label>
+          </div>
+        </div>
+        <div class="funds">
+          <h1 class="location-head">Funds</h1>
+          <div class="checkbox">
+            <label for="">Amount<input type="checkbox" id="amount" /></label>
+            <label for=""
+              >Scholarship<input type="checkbox" id="scholarship"
+            /></label>
+            <label for=""
+              >Tuition Fees %<input type="checkbox" id="tuition"
+            /></label>
+          </div>
+        </div>
+        <div class="dates">
+          <h1 class="location-head">Dates</h1>
+          <div class="checkbox">
+            <label for="">2021-2022<input type="checkbox" id="year21" /></label>
+            <label for="">2022-2023<input type="checkbox" id="year22" /></label>
+            <label for="">2023-2024<input type="checkbox" id="year23" /></label>
+            <label for="">2024-2025<input type="checkbox" id="year24" /></label>
+            <label for="">2025-2026<input type="checkbox" id="year25" /></label>
+            <label for="">2026-2027<input type="checkbox" id="year26" /></label>
+          </div>
+        </div>
+        <button class="remove-filter">Remove Filters</button>
+      </div>
+
+      <div class="content">
+        <!-- actual content -->
+        <div class="uni-info">
+          <h1 class="uni-name">Name will be here</h1>
+          <div class="innercontent">
+            <img src="../images/backdrop2.jpg" alt="Img" class="img-content" />
+            <div class="innercontent-info">
+              <p>Location:Dubai</p>
+              <p>Degree:Phd</p>
+              <p>Date:24-may-2004</p>
+              <p>Funds:$2000</p>
+            </div>
+          </div>
+          <!-- BUTTONS -->
+          <i class="bx bxs-right-arrow right-arrow"></i>
+          <button class="apply-btn">Apply Now!</button>
+          <i class="bx bxs-left-arrow left-arrow"></i>
+        </div>
+      </div>
+    </div>
+    <script src="../js/Resourcehub.js"></script>
+  </body>
+</html>

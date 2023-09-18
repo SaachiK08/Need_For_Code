@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Status Page</title>
+    <link rel="stylesheet" href="/css/status.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="/public/images/logo2.png" alt="">
+        </a>
+       <nav class="navbar">
+        <a href="index.html">Home</a> 
+        <a href="#application">Application Status</a> 
+        <a href="#filter">Filters</a> 
+        <a href="#community">Community</a> 
+        <a href="profile">Resource lib</a>
+        <a href="#profile">Profile</a> 
+       </nav>
+    </header>
+    <div class="container">
+        <div class="buttons">
+            <button class="button" id="appliedButton">Applied</button>
+            <button class="button" id="acceptedButton">Accepted</button>
+            <button class="button" id="waitlistedButton">Waitlisted</button>
+        </div>
+
+        <div class="card-container" id="cardContainer">
+        </div>
+    </div>
+
+    <script>
+        const cardContainer = document.getElementById('cardContainer');
+        const appliedButton = document.getElementById('appliedButton');
+        const acceptedButton = document.getElementById('acceptedButton');
+        const waitlistedButton = document.getElementById('waitlistedButton');
+        const colleges = [
+            { status: 'Applied', name: 'International Students Diversity Contest 2022-2023', courses: 'Courses: Master, Bachelor, Phd, Course', funds:'Funds:Up to $2,000', date:'Date:22 December 2022', location:'Location:United-states'	},
+            { status: 'Applied', name: 'New York University - September 11 Scholarships', courses: 'Courses:Master, Bachelor, Phd, Course', funds:'Funds:Pay any remaining balance.', date:'Date:30 June 2023', location:'Location:United-states'},
+            { status: 'Applied', name: 'Medicine: Fully Funded Swansea & HMRI PhD Scholarship: Ovarian Cancer Chemoresistance', courses: 'Courses:PhD', funds:'Funds:Full cost of tuition fees and an annual stipend', date:'Date:6 May 2022', location:'Location:United-kingdom'},
+            { status: 'Applied', name: 'International Student Support Contest 2022-2023', courses: 'Courses: Master, Bachelor, Phd, Course', funds:'Funds:Multiple awards', date:'Date:31 January 2023', location:'Location:Canada'	},
+            { status: 'Accepted', name: 'New York University - September 11 Scholarships', courses: 'Courses:Master, Bachelor, Phd, Course', funds:'Funds:Pay any remaining balance.', date:'Date:30 June 2023', location:'Location:United-states'},
+            { status: 'Accepted', name: 'International Student Support Contest 2022-2023', courses: 'Courses: Master, Bachelor, Phd, Course', funds:'Funds:Multiple awards', date:'Date:31 January 2023', location:'Location:Canada'	},
+            { status: 'Waitlisted', name: 'International Students Diversity Contest 2022-2023', courses: 'Courses: Master, Bachelor, Phd, Course', funds:'Funds:Up to $2,000', date:'Date:22 December 2022', location:'Location:United-states'	},
+            { status: 'Waitlisted', name: 'Medicine: Fully Funded Swansea & HMRI PhD Scholarship: Ovarian Cancer Chemoresistance', courses: 'Courses:PhD', funds:'Funds:Full cost of tuition fees and an annual stipend', date:'Date:6 May 2022', location:'Location:United-kingdom'},
+        ];
+
+        function displayCards(status) {
+            const filteredColleges = colleges.filter(college => college.status === status);
+            cardContainer.innerHTML = '';
+
+            filteredColleges.forEach(college => {
+                const card = document.createElement('div');
+                card.classList.add('card');
+                card.innerHTML = `
+                    <h3>${college.name}</h3>
+                    <p>${college.courses}</p>
+                    <p>${college.funds}</p>
+                    <p>${college.date}</p>
+                    <p>${college.location}</p>
+                `;
+                cardContainer.appendChild(card);
+            });
+        }
+
+        appliedButton.addEventListener('click', () => {
+            displayCards('Applied');
+        });
+
+        acceptedButton.addEventListener('click', () => {
+            displayCards('Accepted');
+        });
+
+        waitlistedButton.addEventListener('click', () => {
+            displayCards('Waitlisted');
+        });
+        displayCards('Applied');
+    </script>
+</body>
+</html>
