@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root{
+    --text: #2c2c2c;
+    --background: #ffffff;
+    --primary: #25e6cf;
+    --secondary: #afdfef;
+    --accent:#125869; 
+    --border: 1rem solid rgba(255,255,255,.3);
+
+}
+*{
+    font-family: 'Roboto',sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+.heading{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+.heading span{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header{
+    background: #125869;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    height: 100px;
+}
+
+.header .logo img{
+    margin-top: 20%;
+    height: 180px;
+    width: 180px;
+    align-items: center;
+    margin-right: 90%;
+    vertical-align: middle;
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: #fff;
+}
+.header .navbar a:hover{
+    color: var(--secondary);
+    border-bottom: .5rem solid var(--primary);
+    padding-bottom: .1rem;
+}
+.header .icon div{
+    color: var(--text);
+    cursor: pointer;
+    font-size: 2.5rem;
+    
+}
+.header .icon div:hover{
+    color: var(--primary);
+}
+body{
+    background: #afdfef;
+    align-items: center;
+}
+.community{
+    justify-content: center;
+    margin-top: 10%;
+}
+.community .heading{
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 1%;
+    width: 100%;
+    position: absolute;
+
+}
+.community-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 1.5rem;;
+}
+
+.card {
+    background-color: var(--background);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    margin-top: 20%;
+    height: 100%;
+    width: 80%;
+}
+
+.card-header {
+    padding: 10px;
+    background-color: #125869;
+    color: var(--background);
+}
+
+.card-content {
+    padding: 10px;
+}
